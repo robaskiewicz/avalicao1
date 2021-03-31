@@ -1,8 +1,15 @@
 # avalicao1
 Atividades avaliativas 1, contendo os Exercícios Teóricos e Práticos
 
+=====================Exercícios Práticos=====================
+Caminhos :
+http://localhost:8080/contador  => conta a quantidade de Acessos
+http://localhost:8080/pessoas  => Mostra lista de Pessoas e Cadastra
+http://localhost:8080/produtos => Mostra lista de Produtos e Cadastra
+http://localhost:8080/pedidos => Mostra lista de Pedidos e Cadastra
 
-=============================================================
+
+=========================Exercícios Teóricos====================================
 
 ET1)http é um protocolo de comunicação de texto que permite o envio de informações através do navegador até o servidor. Nesse caminho de envio de informações até o servidor é possível capturar dados permitindo então com que pessoas mal intencionadas consiga interceptar e pegar informações durante essa transação.
 
