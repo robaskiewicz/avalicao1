@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
 
 import com.atividade2.venda.entidade.Pedido;
 import com.atividade2.venda.entidade.PedidoItem;
-import com.atividade2.venda.entidade.PedidoItemRepositorio;
 import com.atividade2.venda.entidade.PedidoRepositorio;
 import com.atividade2.venda.entidade.Pessoa;
 import com.atividade2.venda.entidade.PessoaRepositorio;
@@ -29,8 +28,7 @@ public class Popula implements CommandLineRunner{
 	private ProdutoRepositorio repositorioProduto;
 	@Autowired
 	private PedidoRepositorio pedidoRepositorio;
-	@Autowired
-	private PedidoItemRepositorio pedidoItemRepositorio ;
+	
 	
 	@Override
 	public void run(String... args) throws Exception{
@@ -67,10 +65,7 @@ public class Popula implements CommandLineRunner{
 		pedidoItem.setProduto(produto1);
 		pedidoItem.setQuantidade(1);
 		pedidoItem.setValor(new BigDecimal(10));
-//		
-//		pedidoItemRepositorio.save(pedidoItem);
-//		pedidoItemRepositorio.flush();
-		
+
 		pedido1.addPedidoItem(pedidoItem);
 		
 		pedidoRepositorio.save(pedido1);

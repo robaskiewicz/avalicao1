@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.atividade2.venda.entidade.Pedido;
 import com.atividade2.venda.entidade.PedidoItem;
-import com.atividade2.venda.entidade.PedidoItemRepositorio;
 import com.atividade2.venda.entidade.PedidoRepositorio;
 import com.atividade2.venda.entidade.Pessoa;
 import com.atividade2.venda.entidade.PessoaRepositorio;
@@ -27,14 +26,12 @@ import org.springframework.ui.Model;
 public class PedidoControle {
 	
 	private PedidoRepositorio pedidoRepo;
-	private PedidoItemRepositorio pedidoItemRepo;
 	private PessoaRepositorio pessoaRepo;
 	private ProdutoRepositorio produtoRepo;
 
 
-	public PedidoControle(PedidoRepositorio pedidoRepo, PessoaRepositorio pessoaRepo, ProdutoRepositorio produtoRepo, PedidoItemRepositorio pedidoItemRepo) {
+	public PedidoControle(PedidoRepositorio pedidoRepo, PessoaRepositorio pessoaRepo, ProdutoRepositorio produtoRepo) {
 		this.pedidoRepo = pedidoRepo;
-		this.pedidoItemRepo = pedidoItemRepo;
 		this.pessoaRepo = pessoaRepo;
 		this.produtoRepo = produtoRepo;
 	}
